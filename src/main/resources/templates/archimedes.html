@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Анимация плавания тела</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="form-section">
+        <h1>Выяснение условий плавания тела</h1>
+        <form id="archimedesForm">
+            <label for="DensityOfObject">Введите плотность тела:</label>
+            <input type="number" min="0.01" id="DensityOfObject" name="DensityOfObject" step="0.01" required><br>
+
+            <label for="DensityOfLiquid">Введите плотность жидкости:</label>
+            <input type="number" min="0.01" id="DensityOfLiquid" name="DensityOfLiquid" step="0.01" required><br>
+
+            <label for="Mass">Введите массу тела:</label>
+            <input type="number" min="0.01" id="Mass" name="Mass" step="0.01" required><br>
+
+            <label for="Length">Введите длину тела:</label>
+            <input type="number" min="0.01" id="Length" name="Length" step="0.01" required><br>
+
+            <label for="Width">Введите ширину тела:</label>
+            <input type="number" min="0.01" id="Width" name="Width" step="0.01" required><br>
+
+            <button type="submit">Вычислить</button>
+        </form>
+
+        <div id="results">
+            <h2>Условия плавания данного тела:</h2>
+            <p id="archimedesPower">Архимедова сила: </p>
+            <p id="heightOfPartInFluid">Высота погруженной части тела: </p>
+            <p id="volumeOfDisplacedFluid">Объём вытесненной жидкости: </p>
+            <p id="howFloat">Как плавает: </p>
+        </div>
+    </div>
+    
+    <div class="animation-section">
+        <h2>Анимация плавания тела</h2>
+        <div id="animation-container">
+            <div id="liquid"></div>
+            <div id="object"></div>
+        </div>
+    </div>
+</div>
+<script src="animation.js"></script>
+<script src="response.js"></script>
+</body>
+</html>
