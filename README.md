@@ -46,21 +46,6 @@
 
 ---
 
-## 📁 Project Structure
-
-```
-ArchimedesSimulator/
-│
-├── index.html              # Main page — form + animation container
-├── style.css               # Styling and layout
-├── animation.js            # Animation logic for floating body
-├── response.js             # Form handling & AJAX communication
-└── server/                 # Backend (if applicable)
-    └── controller.java     # Spring/Thymeleaf controller
-```
-
----
-
 ## 🧠 How It Works
 
 ### 1. User Input
