@@ -1,8 +1,3 @@
-Here's a **clean, well-formatted README** for your **Archimedes' Principle Simulator** based on the actual project structure you provided:
-
----
-
-````markdown
 <div align="center">
 
 # 🌊 Archimedes' Principle Simulator
@@ -237,14 +232,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Made with ❤️ for Physics Education
 
 </div>
-````
-
----
-
-## 📝 Short Description (max 350 chars)
-
-```
-Archimedes' Principle Simulator — Spring Boot web app for physics education. Enter density, mass, dimensions, see real-time animation with full calculations. Built with Java, Thymeleaf, JavaScript.
-```
-
-**Character count:** 248 ✅
